@@ -1,4 +1,4 @@
-﻿namespace TestGui
+﻿namespace DeckListGUI
 {
     partial class Form1
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.cardInput = new System.Windows.Forms.TextBox();
             this.addButton = new System.Windows.Forms.Button();
             this.commanderButton = new System.Windows.Forms.CheckBox();
@@ -251,14 +252,14 @@
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.exportButton_Click);
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.loadToolStripMenuItem.Text = "Load";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.importButton_Click);
             // 
@@ -285,6 +286,7 @@
             this.Controls.Add(this.commanderButton);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.cardInput);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Deck Builder";
             ((System.ComponentModel.ISupportInitialize)(this.cardQty)).EndInit();
